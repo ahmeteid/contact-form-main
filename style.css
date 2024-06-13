@@ -62,7 +62,7 @@ textarea:focus {
 .contact-us {
     position: absolute;
     top: 30%;
-    left: 40%;
+    left: 35%;
     background-color: var(--white);
     padding: 50px;
     border-radius: 12px;
@@ -97,11 +97,23 @@ textarea:focus {
     margin-bottom: 20px;
 }
 
+.contact-us .q-type {
+    display: flex;
+}
+
 .contact-us .q-type .g-e-r,
 .contact-us .q-type .s-r-r {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
     border: 2px solid var(--green);
     padding: 5px 20px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
 .contact-us .q-type .g-e-r label,
@@ -109,4 +121,52 @@ textarea:focus {
 .contact-us .q-type .g-e-r input[type="radio"],
 .contact-us .q-type .s-r-r input[type="radio"] {
     display: inline;
+}
+
+.contact-us .q-type .g-e-r input[type="radio"],
+.contact-us .q-type .s-r-r input[type="radio"] {
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.contact-us .q-type .s-r-r {
+    margin-left: 10px;
+}
+
+/* .contact-us .q-type .g-e-r>input[type="radio"]:focus,
+.contact-us .q-type .s-r-r>input[type="radio"]:focus {
+    border-color: hsl(169, 82%, 27%);
+} */
+
+.m-essage textarea {
+    resize: none;
+}
+
+.c-heck {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.c-heck>label {
+    flex: 1;
+}
+
+.c-heck input[type="checkbox"] {
+    width: fit-content;
+    margin-right: 10px;
+}
+
+/* .c-heck input[type="checkbox"]:focus {
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(169, 82%, 27%);
+} */
+
+#btn {
+    background-color: hsl(169, 82%, 27%);
+    color: var(--white);
+    padding: 10px 0;
+    text-transform: capitalize;
+    font-weight: 700;
+    cursor: pointer;
 }
