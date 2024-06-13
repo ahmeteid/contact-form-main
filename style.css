@@ -1,0 +1,112 @@
+/* Green 200 (lighter): hsl(148, 38%, 91%)
+- Green 600 (medium): hsl(169, 82%, 27%)
+- Red: hsl(0, 66%, 54%)
+White: hsl(0, 0%, 100%)
+- Grey 500 (medium): hsl(186, 15%, 59%)
+- Grey 900 (darker): hsl(187, 24%, 22%) */
+
+/* Font size (labels): 16px */
+/* - Weights: 400, 700 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(148, 38%, 91%);
+}
+
+body {
+    font-family: Karla;
+    background-color: hsl(148, 38%, 91%);
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+label::after {
+    content: "*";
+    position: absolute;
+    margin-left: 5px;
+    top: 0;
+    color: hsl(169, 82%, 27%);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px 20px;
+    border: 2px solid var(--green);
+    outline: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: hsl(169, 82%, 27%);
+}
+
+.contact-us {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: var(--white);
+    padding: 50px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.contact-us h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.contact-us .f-name {
+    display: inline-block;
+}
+
+.contact-us .l-name {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.contact-us .f-name,
+.contact-us .l-name,
+.contact-us .e-mail,
+.contact-us .q-type,
+.contact-us .m-essage,
+.contact-us .c-heck {
+    margin-bottom: 20px;
+}
+
+.contact-us .q-type .g-e-r,
+.contact-us .q-type .s-r-r {
+    display: inline-block;
+    border: 2px solid var(--green);
+    padding: 5px 20px;
+}
+
+.contact-us .q-type .g-e-r label,
+.contact-us .q-type .s-r-r label,
+.contact-us .q-type .g-e-r input[type="radio"],
+.contact-us .q-type .s-r-r input[type="radio"] {
+    display: inline;
+}
