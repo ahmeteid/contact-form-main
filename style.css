@@ -72,6 +72,14 @@ textarea:focus {
     -o-border-radius: 12px;
 }
 
+@media (max-width: 767px) {
+    .contact-us {
+        left: 4%;
+        top: 10%;
+        margin-right: 5%;
+    }
+}
+
 .contact-us h2 {
     text-transform: capitalize;
     font-weight: 700;
@@ -83,9 +91,22 @@ textarea:focus {
     display: inline-block;
 }
 
+@media (max-width: 767px) {
+    .contact-us .f-name {
+        width: 100%;
+    }
+}
+
 .contact-us .l-name {
     display: inline-block;
     margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+    .contact-us .l-name {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 .contact-us .f-name,
@@ -99,6 +120,12 @@ textarea:focus {
 
 .contact-us .q-type {
     display: flex;
+}
+
+@media (max-width: 767px) {
+    .contact-us .q-type {
+        flex-direction: column;
+    }
 }
 
 .contact-us .q-type .g-e-r,
@@ -133,10 +160,12 @@ textarea:focus {
     margin-left: 10px;
 }
 
-/* .contact-us .q-type .g-e-r>input[type="radio"]:focus,
-.contact-us .q-type .s-r-r>input[type="radio"]:focus {
-    border-color: hsl(169, 82%, 27%);
-} */
+@media (max-width: 767px) {
+    .contact-us .q-type .s-r-r {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
 
 .m-essage textarea {
     resize: none;
@@ -156,11 +185,6 @@ textarea:focus {
     width: fit-content;
     margin-right: 10px;
 }
-
-/* .c-heck input[type="checkbox"]:focus {
-    background-color: hsl(169, 82%, 27%);
-    color: hsl(169, 82%, 27%);
-} */
 
 #btn {
     background-color: hsl(169, 82%, 27%);

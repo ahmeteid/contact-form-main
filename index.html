@@ -35,11 +35,11 @@
         <label>query type</label>
         <div class="q-type">
           <div class="g-e-r">
-            <input type="radio" id="g-e-r" name="q-type" />
+            <input type="radio" id="g-e-r" name="q-type" required />
             <label for="g-e-r">general enquiry</label>
           </div>
           <div class="s-r-r">
-            <input type="radio" id="s-r-r" name="q-type" />
+            <input type="radio" id="s-r-r" name="q-type" required />
             <label for="s-r-r">support request</label>
           </div>
         </div>
@@ -48,13 +48,14 @@
           <textarea id="m-essage" rows="5" cols="30" required></textarea>
         </div>
         <div class="c-heck">
-          <input type="checkbox" id="c-heck" />
+          <input type="checkbox" id="c-heck" required />
           <label for="c-heck">i consent to being contacted by the team</label>
         </div>
         <input id="btn" type="submit" value="submit" />
       </form>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="script.js"></script>
   </body>
 </html>
